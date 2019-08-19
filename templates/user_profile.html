@@ -20,6 +20,7 @@
 	                        </a>
 	                    {% else %}
 	                        {% is_following user object as following %} 
+							<div class = "follow-toggle_container">
 	                             <button class="btn btn-primary {% if not following %}follow-user{% else %}unfollow-user{% endif %}" id="{{ object.pk }}">
 	                                {% if following %}
 	                                    Unfollow

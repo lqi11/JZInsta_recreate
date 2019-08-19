@@ -98,6 +98,8 @@ class Like(models.Model):
         on_delete=models.CASCADE,
         related_name='likes'
     )
+    class Mega:
+        unique_together = ("post", "user")
 
     def __str__(self):
         return 'Like: ' + self.user.username + ' Likes ' + self.post.title 
