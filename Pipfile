@@ -11,6 +11,7 @@ pylint = "*"
 pillow = "*"
 django-imagekit = "*"
 django-annoying = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
